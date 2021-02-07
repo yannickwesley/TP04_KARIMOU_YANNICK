@@ -29,7 +29,7 @@ public class GestionnaireCompteBancaire {
     }
         public Collection<CompteBancaire> getAllBankAccount() {
         // Exécution d'une requête équivalente à un select *
-        Query q = em.createQuery("select c from CompteBancaire c");
+        Query q = em.createQuery("select cb from CompteBancaire cb");
         return q.getResultList();
     }
     
